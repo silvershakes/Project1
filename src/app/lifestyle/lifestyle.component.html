@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        li {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(162, 163, 161);
+        }
+
+        .foot {
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(245, 246, 246)">
+    <div>
+        <br><br>
+    </div>
+    <div class="container-fluid" style="display: flex;">
+        <div class="col-md-2" style=" padding-right: 5px; ">
+            <!-- catagory -->
+            <div class="card  ">
+                <!-- <h5 class="card-header bg-white border-0" style="text-align: center; color: darkslategrey;">Categories</h5> -->
+                <div style="padding:10px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0">
+                                <h5 style="color: mediumslateblue;"><i style="padding-right: 7px;"
+                                        class="fa-solid fa-bars"></i><b>CATEGORY</b></h5>
+                                <li class=" mb-2">
+                                    <a routerLink="/entertainment" href="#"
+                                        class="text-secondary"><b>ENTERTAINMENT</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/technology" href="#" class="text-secondary"><b>TECHNOLOGY</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/lifestyle" href="#" class="text-secondary"><b>LIFESTYLE</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/political" href="#" class="text-secondary"><b>POLITICAL</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/sports" href="#" class="text-secondary"><b>SPORTS</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/spiritual" href="#" class="text-secondary"><b>SPIRITUAL</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/education" href="#" class="text-secondary"><b>EDUCATION</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Advertisement -->
+            <div style="border-radius: 5px; text-align: center; margin-top: 10px; padding: 5px;">
+                <h6 style="color:rgb(236, 86, 60);background-color:white ;">Advertisement</h6>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="data:image/jpeg;base64,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" alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="data:image/png;base64,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"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkD5O948VEPz696D7eJkmM1X_8e7XOewNIFg&usqp=CAU"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9xTW1Xp96X8rX0kSlN2Lm_Khh2hbnunyHQ&usqp=CAU"
+                        alt="">
+                </div>
+                
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aICH7hQwRLI0uiOpZmmQzZnoHjvH7eZI7g&usqp=CAU" alt="">
+                </div><br>
+
+                <div>
+                    <iframe width="200px" height="150px" class="youtube"
+                        src="https://www.youtube.com/embed/fvJdp7LYZrk?feature=shared" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Culture -->
+
+        <div style="padding-bottom: 0px; border: 2px solid white; height: 400px; margin-left: 10px; width: 900px; margin-right: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
+            class="card text-white">
+            <div class="story__cat">
+                <h4 class="B1S3_cat__title___NXs1" style="margin-left: 10px; margin-top: 8p;">Art Culture</h4>
+            </div>
+            <h2 style="font-size: 28px;" class=""><a routerLink="/life"
+                    style="color: black; font-weight: bold; text-decoration: none; margin-left: 10px;"
+                    title="Interior decor to cuisine: 5 tips to make your restaurant stand out"
+                    href="">
+                    Interior decor to cuisine: 5 tips to make your restaurant stand out</a></h2>
+            <div class="B1S3_story__shortcont__inicf">
+                <p style="color: black; margin-left: 10px;">
+                    Experts share essential tips from interior decor to cuisine, to ensure that your restaurant becomes a destination where guests keep coming back for more.. </p>
+            </div>
+            <img style="height: 396px; border-radius: 0;"
+                src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/Luxury-Water-0_1700578568284_1700578650417.jpg"
+                class="card-img" alt="...">
+
+            <div style="color: black; margin-top: 10px;">
+                <article class="B1S3_story__card__A_fhi ">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1" style="margin-left: 2px; margin-top: 2px;">Health</h4>
+                    </div>
+                    <div class="B1S3_content__thumbnail__wrap__iPgcS content__thumbnail__wrap ">
+                        <div class="B1S3_content__wrap__9mSB6">
+                            <h2 style="font-size: 28px;" class="" style="margin-left: 2px;"><a
+                                    style="color: black; font-weight: bold; text-decoration: none;"
+                                    title="Rheumatoid arthritis in young adults: Causes, symptoms and treatment"
+                                    href="">
+                                    Rheumatoid arthritis in young adults: Causes, symptoms and treatment</a>
+                            </h2>
+                            <div class="B1S3_story__shortcont__inicf">
+                                <p style="margin-left: 10px;">Sore, swollen and stiff joints of rheumatoid arthritis are commonly linked to old age but youngsters can also be affected. Know its causes, symptoms, treatment.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="B1S3_story__thumbnail___pFy6">
+                            <a title="Rheumatoid arthritis in young adults: Causes, symptoms and treatment"
+                                href="">
+                                <div class="thumb playIconThumbContainer" data-url="">
+                                    <img class="image_one_to_one"
+                                        src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/_ce5c7c64-5254-11e7-8a38-d46223a68388_1700575642118.jpg"
+                                        title="Rheumatoid arthritis in young adults: Causes, symptoms and treatment"
+                                        alt="" loading="lazy" width="10px">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                </article>
+
+                <article class="B1S3_story__card__A_fhi ">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1" style="margin-left: 2px;">Recipe</h4>
+                    </div>
+                    <div class="B1S3_content__thumbnail__wrap__iPgcS content__thumbnail__wrap ">
+                        <div class="B1S3_content__wrap__9mSB6">
+                            <h2 style="font-size: 28px;" class=""><a
+                                    style="color: black; font-weight: bold; text-decoration: none;"
+                                    title="Sev ki Burfi: A quick dessert recipe for your sweet tooth"
+                                    href="">Sev ki Burfi: A quick dessert recipe for your sweet tooth.</a>
+                            </h2>
+                            <div class="B1S3_story__shortcont__inicf">
+                                <p>Here's a super easy and fun recipe for preparing Sev Burfi at home and relishing on the lip-smacking dessert.</p>
+                            </div>
+                        </div>
+                        <div class="B1S3_story__thumbnail___pFy6"><a
+                                title="Sev ki Burfi: A quick dessert recipe for your sweet tooth"
+                                href="">
+                                <div class="thumb playIconThumbContainer" data-url=""><img class="image_one_to_one"
+                                        src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/sshg_1700565675930_1700565686282.jpg"
+                                        title="Sev ki Burfi: A quick dessert recipe for your sweet tooth"
+                                        alt="" height="115" width="115" loading="lazy"></div>
+                            </a></div>
+                    </div>
+                </article>
+
+                <article class="B1S3_story__card__A_fhi ">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1" style="margin-left: 2px;">Lifestyle</h4>
+                    </div>
+                    <div class="B1S3_content__thumbnail__wrap__iPgcS content__thumbnail__wrap ">
+                        <div class="B1S3_content__wrap__9mSB6">
+                            <h2 style="font-size: 28px;" class=""><a
+                                    style="color: black; font-weight: bold; text-decoration: none;"
+                                    title="Types of stress, explained by Psychologist'"
+                                    href="">
+                                    Types of stress, explained by Psychologist</a></h2>
+                            <div class="B1S3_story__shortcont__inicf">
+                                <p>From acute stress to episodic stress, here’s all that you need to know about the types of stress.</p>
+                            </div>
+                        </div>
+                        <div class="B1S3_story__thumbnail___pFy6"><a
+                                title="Types of stress, explained by Psychologist'"
+                                href="">
+                                <div class="thumb playIconThumbContainer" data-url=""><img class="image_one_to_one"
+                                        src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/s0gfd_1700562016379_1700562050487.jpg"
+                                        title="Types of stress, explained by Psychologist'"
+                                        alt="" height="115" width="115" loading="lazy"></div>
+                            </a></div>
+                    </div>
+                </article>
+
+                <article class="B1S3_story__card__A_fhi ">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1">Relationship</h4>
+                    </div>
+                    <div class="B1S3_content__thumbnail__wrap__iPgcS content__thumbnail__wrap ">
+                        <div class="B1S3_content__wrap__9mSB6">
+                            <h2 style="font-size: 28px;" class=""><a
+                                    style="color: black; font-weight: bold; text-decoration: none;"
+                                    title="How to manage family issues and cope up with your deteriorating mental health"
+                                    href="">
+                                    How to manage family issues and cope up with your deteriorating mental health</a></h2>
+                            <div class="B1S3_story__shortcont__inicf">
+                                <p>Check out this guide that outlines key practices to effectively manage family issues and foster a harmonious environment for mental well-being.</p>
+                            </div>
+                        </div>
+                        <div class="B1S3_story__thumbnail___pFy6"><a
+                                title="How to manage family issues and cope up with your deteriorating mental health"
+                                href="">
+                                <div class="thumb playIconThumbContainer" data-url=""><img class="image_one_to_one"
+                                        src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/partner_fight_thumb_1642657271327_1700552087770.jpg"
+                                        title="How to manage family issues and cope up with your deteriorating mental health"
+                                        alt=""
+                                        height="115" width="115" loading="lazy"></div>
+                            </a></div>
+                    </div>
+                </article>
+
+                <article class="B1S3_story__card__A_fhi ">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1">Festival</h4>
+                    </div>
+                    <div class="B1S3_content__thumbnail__wrap__iPgcS content__thumbnail__wrap ">
+                        <div class="B1S3_content__wrap__9mSB6">
+                            <h2 style="font-size: 28px;" class=""><a
+                                    style="color: black; font-weight: bold; text-decoration: none;"
+                                    title="Akshaya Navami 2023: Date, history and significance"
+                                    href="">
+                                    Akshaya Navami 2023: Date, history and significance</a></h2>
+                            <div class="B1S3_story__shortcont__inicf">
+                                <p>Akshaya Navami, also known as Amla Navami, is a significant day in Hindu religion. On this day, people engage in various 
+                                    religious activities and women fast and worship the Amla tree.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="B1S3_story__thumbnail___pFy6"><a
+                                title="Akshaya Navami 2023: Date, history and significance"
+                                href="">
+                                <div class="thumb playIconThumbContainer" data-url=""><img class="image_one_to_one"
+                                        src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/jj_1700539350729_1700539361925.jpg"
+                                        title="Akshaya Navami 2023: Date, history and significance"
+                                        alt=""
+                                        height="115" width="115" loading="lazy"></div>
+                            </a></div>
+                    </div>
+                </article>
+
+                <article class="B1S3_story__card__A_fhi ">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1">Horoscope</h4>
+                    </div>
+                    <div class="B1S3_content__thumbnail__wrap__iPgcS content__thumbnail__wrap ">
+                        <div class="B1S3_content__wrap__9mSB6">
+                            <h2 style="font-size: 28px;" class=""><a
+                                    style="color: black; font-weight: bold; text-decoration: none;"
+                                    title="Horoscope Today: Astrological prediction for November 21, 2023"
+                                    href="">Horoscope Today: Astrological prediction for November 21, 2023</a></h2>
+                            <div class="B1S3_story__shortcont__inicf">
+                                <p>Daily horoscope: Are the stars lined up in your favour? Find out the astrological prediction for Aries, Leo, Virgo, and other zodiac signs for November 21, 2023</p>
+                            </div>
+                        </div>
+                        <div class="B1S3_story__thumbnail___pFy6"><a
+                                title="Horoscope Today: Astrological prediction for November 21, 2023"
+                                href="">
+                                <div class="thumb playIconThumbContainer" data-url=""><img class="image_one_to_one"
+                                        src="https://www.hindustantimes.com/ht-img/img/2023/11/20/550x309/horoscope-g11949207e_1920_1639838644746_1700494380844.jpg"
+                                        title="Horoscope Today: Astrological prediction for November 21, 2023"
+                                        alt="" height="115"
+                                        width="115" loading="lazy"></div>
+                            </a></div>
+                    </div>
+                </article>
+
+                <!-- <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    <div class="story__cat">
+                        <h4 class="B1S3_cat__title___NXs1" style="margin-left: 10px;">Travel</h4>
+                    </div>
+                    <h2 style="font-size: 28px; margin-left: 10px;" class=""><a routerLink="/life1"
+                            style="color: black; font-weight: bold; text-decoration: none;"
+                            title="President Murmu unveils 3 new trains to strengthen connectivity in Odisha's tribal areas."
+                            href="">
+                            President Murmu unveils 3 new trains to strengthen connectivity in Odisha's tribal areas.</a></h2>
+                    <div class="B1S3_story__shortcont__inicf">
+                        <p style="margin-left: 10px;">President Droupadi Murmu flags off 3 trains in Odisha to provide connectivity to the tribal areas, takes inaugural trip to a village close to her birthplace.</p>
+                    </div>
+                    <img class="card-img-top "
+                        src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/ANI-20231121033-0_1700559816391_1700559866501.jpg"
+                        alt="" height="388" width="690" class=""
+                        style="max-width: 100%; max-height: 100%; border-radius: 0;">
+                </div> -->
+            </div>
+        </div>
+        <div>
+
+            <!-- Recommend Widget -->
+            <div style="width: 300px; ">
+                <div class="card mb-4 border-0">
+
+                    <div class="card-body">
+                        <h5 style="color: mediumslateblue;" class="card-header border-0 bg-white"><i class="fa-solid fa-up-right-from-square"></i>&nbsp;&nbsp;<b>Recommended</b></h5>
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/israel-hamas-war-4-day-ceasefire-hostages-release-255926782-16x9_0.jpg?VersionId=VnUTo1DMAvETH.d7NWnEd9WiRqPqK4FU&size=690:388"
+                            alt="" width="420px">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Will resume ground op if...': Israel warns Hamas over delay in hostage release</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://www.indiatoday.in/world/story/israel-hamas-war-hostage-release-gaza-offensive-palestine-2467565-2023-11-25">investing.com</a>
+
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/vvs-laxman-to-coach-indias-mens-team-at-asian-games-2023-124741102-16x9.jpg?VersionId=vrrYOZ.rfotxcuHHTm8a3SqQ76fkyjfa&size=690:388"
+                            alt="" width="270px">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">VVS Laxman set to take over as India head coach, Rahul Dravid likely to mentor LSG in IPL 2024</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://www.indiatoday.in/sports/cricket/story/vvs-laxman-set-to-take-over-as-india-head-coach-rahul-dravid-likely-to-mentor-lsg-in-ipl-2024-2467473-2023-11-25">media.com</a>
+                        <br><br>
+
+                        <iframe width="100%" height="180px" class="youtube"
+                            src="https://www.youtube.com/embed/6hTmWp6CFd4?si=06ZQVmU_pYrNtTnn" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <br><br>
+
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/pm-narendra-modi-250909143-16x9_0.jpg?VersionId=GWHWDi7Cxxa6e6iGFPmT85duIvqkFP5h&size=690:388"
+                            alt="" width="270px">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Pics: PM Modi takes sortie in Tejas fighter jet, says 'renewed sense of pride'</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/pm-narendra-modi-250909143-16x9_0.jpg?VersionId=GWHWDi7Cxxa6e6iGFPmT85duIvqkFP5h&size=690:388">investing.com</a>
+
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/story-of-the-day-25185940-16x9.jpg?VersionId=8fuHBoGLn.8_JD7szOE1buU46liR32VD&size=690:388"
+                            alt="" width="270px">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Centre calls all-party meet on Dec 2 ahead of Parliament's Winter Session</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://www.indiatoday.in/india/story/parliament-winter-session-all-party-meeting-december-2-2467498-2023-11-25">media.com</a>
+                    </div>
+                    <div>
+                        <img style="width: 300px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXfoX9NpbW4dFmTT1Y7-8VKyhAKTNx7G5rBQ&usqp=CAU"
+                            alt="" width="270px">
+                    </div>
+                    <div>
+                        <img style="width: 300px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf2jVCBpb3sp8X5x707gVewJ_qa-VbYlWvlneYNzyrg4H2Zj_I2MjPb-MBv62nP7eA_LA&usqp=CAU"
+                            alt="" width="270px">
+                    </div>
+                    <br>
+                    <div>
+                        <iframe width="100%" height="180px" class="youtube"
+                            src="https://www.youtube.com/embed/97Q8b0lxd-o?feature=shared" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <br>
+                    </div>
+                    <div>
+                        <img style="width: 300px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLmaB70J0KlLwJ5l-01nEfZWPKmUNMrTb1w&usqp=CAU"
+                            alt="" width="270px">
+                    </div><br>
+                    <div>
+                        <iframe width="300px" height="150px" class="youtube"
+                            src="https://www.youtube.com/embed/jsmChHLST8E?feature=shared" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div>
+        <div class="footer-area  ">
+            <div style="background-color: rgb(58, 59, 59); padding-top: 20px;" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">COMPANY</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Environment</a></li>
+                            <li class="mb-2"><a href="#">Religion</a></li>
+                            <li class="mb-2"><a href="#">Fashion</a></li>
+                            <li class="mb-2"><a href="#">Terrorism</a></li>
+                            <li class="mb-2"><a href="#">Conflicts</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">PRODUCT</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Medical Research</a></li>
+                            <li class="mb-2"><a href="#">Children s Health</a></li>
+                            <li class="mb-2"><a href="#">Around the World</a></li>
+                            <li class="mb-2"><a href="#">Ad Choices</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">T & C</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Commercial</a></li>
+                            <li class="mb-2"><a href="#">Find A Home</a></li>
+                            <li class="mb-2"><a href="#">Mortgage Calculator</a></li>
+                            <li class="mb-2"><a href="#">My Real Estate</a></li>
+                            <li class="mb-2"><a href="#">The High End</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot"> LINK</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Politics</a></li>
+                            <li class="mb-2"><a href="#">Opinion</a></li>
+                            <li class="mb-2"><a href="#">N.Y.</a></li>
+                            <li class="mb-2"><a href="#">Science</a></li>
+                            <li class="mb-2"><a href="#">Business</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">CONTENT</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Arts</a></li>
+                            <li class="mb-2"><a href="#">Style</a></li>
+                            <li class="mb-2"><a href="#">Food</a></li>
+                            <li class="mb-2"><a href="#">Travel</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">MEDIA</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Basketball</a></li>
+                            <li class="mb-2"><a href="#">Football: College</a></li>
+                            <li class="mb-2"><a href="#">Football: N.F.L.</a></li>
+
+                            <li class="mb-2"><a href="#">Hockey</a></li>
+                            <li class="mb-2"><a href="#">Soccer</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div
+                    style="display: flex; padding-top: 20px;padding-bottom: 20px; background-color: rgb(103, 102, 102);">
+                    <i class="fa-brands fa-facebook" style="color: #4887f3; margin-left: 10px; font-size: 30px;"> </i>
+                    <h3 style="color: aliceblue; margin-left: 9px;">Facebook</h3>
+                    <i class="fa-brands fa-twitter" style="color: #479ef6; margin-left: 30px; font-size: 30px;"></i>
+                    <h3 style="color: aliceblue; margin-left: 9px;">Twitter</h3>
+                    <i class="fa-brands fa-youtube" style="color: #f83030; margin-left: 30px; font-size: 30px;"></i>
+                    <h3 style="color: aliceblue; margin-left: 9px;">YouTube</h3>
+                    <i class="fa-regular fa-copyright" style="color: #ffffff; margin-left: 100px ;font-size: 30px;"></i>
+                    <h5 style="color: white;">TheDailyBrief free news website - All Rights Reserved</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

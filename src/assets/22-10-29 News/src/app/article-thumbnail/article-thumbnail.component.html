@@ -1,0 +1,24 @@
+<div *ngIf="article">
+    <div class="main" *ngIf="view === 'main'">
+        <span class="heading">Breaking News!</span>
+        <img src="../../assets/Images/{{article.imageName}}" alt="Politics" openArticle [category]="article.category"
+             [id]="getId(article.title)">
+        <h3 class="title">{{article.title | titlecase}}</h3>
+    </div>
+
+    <div class="other" *ngIf="view === 'other'">
+        <span class="heading">Lastest News!</span>
+
+        <img src="../../assets/Images/{{article.imageName}}" alt="Politics" openArticle [category]="article.category"
+             [id]="getId(article.title)">
+
+        <h3 class="title">{{article.title | titlecase}}</h3>
+    </div>
+
+    <div class="suggested" *ngIf="view === 'suggested'">
+        <img src="../../assets/Images/{{article.imageName}}" alt="Politics" openArticle [category]="article.category"
+             [id]="getId(article.title)">
+
+        <h3 class="title">{{article.title | titlecase}}</h3>
+    </div>
+</div>

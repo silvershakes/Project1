@@ -1,0 +1,15 @@
+a {
+    color: crimson;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+a:hover{
+    color: darkred;
+}
+/* ul {
+    margin-left: 45%;
+} */
+li {
+    padding-right:28px;
+}

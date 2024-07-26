@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        li {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(162, 163, 161);
+        }
+
+        .foot {
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(245, 246, 246)">
+    <div>
+        <!-- <h4 style="padding-left: 226px; padding-top: 10px; padding-bottom: 20px;" class="widget-title ">Today Highlight</h4> -->
+        <h2 style="text-align: center; color:crimson ; padding: 10px;"><b>
+                <marquee behavior="15" direction="float-right">Today`s Highlights </marquee>
+            </b></h2>
+    </div>
+    <div class="container-fluid" style="display: flex;">
+        <div class="col-md-2" style=" padding-right: 5px; ">
+            <!-- catagory -->
+            <div class="card  ">
+                <!-- <h5 class="card-header bg-white border-0" style="text-align: center; color: darkslategrey;">Categories</h5> -->
+                <div style="padding:10px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0">
+                                <h5 style="color: mediumslateblue;"><i style="padding-right: 7px;"
+                                        class="fa-solid fa-bars"></i><b>CATEGORY</b></h5>
+                                <li class=" mb-2">
+                                    <a routerLink="/entertainment" href="#"
+                                        class="text-secondary"><b>ENTERTAINMENT</b></a>
+                                </li>
+                                <!-- <li class=" mb-2">
+                                    <a routerLink="/technology" href="#" class="text-secondary"><b>TECHNOLOGY</b></a>
+                                </li> -->
+                                <li class=" mb-2">
+                                    <a routerLink="/lifestyle" href="#" class="text-secondary"><b>LIFESTYLE</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/political" href="#" class="text-secondary"><b>POLITICAL</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/sports" href="#" class="text-secondary"><b>SPORTS</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/spiritual" href="#" class="text-secondary"><b>SPIRITUAL</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/education" href="#" class="text-secondary"><b>EDUCATION</b></a>
+                                </li>
+                                 <li class=" mb-2">
+                                    <a href="#" class="text-secondary"><b>Business</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Advertisement -->
+            <div style="border-radius: 5px; text-align: center; margin-top: 10px; padding: 5px;">
+                <h6 style="color:rgb(236, 86, 60);background-color:white ;">Advertisement</h6>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX35744430.jpg" alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://psddaddy.com/wp-content/uploads/2019/11/Big-brand-Sale-Social-Media-cover.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://static.picmaker.com/scene-prebuilts/thumbnails/b5364d71-c1b8-4ba0-a74f-82d18589d4cb.png"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://dcassetcdn.com/design_img/1708257/505401/505401_9348563_1708257_bcb6fa3d_image.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://thumbs.dreamstime.com/z/pizza-chalkboard-poster-fast-food-design-pizza-chalkboard-poster-template-italian-pizza-menu-sketch-banner-blackboard-99658030.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://i.pinimg.com/736x/31/70/a7/3170a718979579879f8a0ef3938eb20b.jpg" alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://pbs.twimg.com/media/ETsPLalUYAA2870.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- virat kohali -->
+        <div style="padding-bottom: 0px; border: 2px solid white; height: 400px; margin-left: 10px; width: 900px; margin-right: 15px;"
+            class="card bg-dark text-white">
+
+            <img style="opacity: .6; height: 420px;"
+                src="https://images.indianexpress.com/2024/06/modi-27.jpg?w=640"
+                class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h3 class="card-title" style="padding-top: 200px;"><a routerLink="/main" style="color: white;">In BJP’s initial evaluation of LS poll results, 3 possible reasons why it lost ground in UP, Rajasthan, Haryana</a></h3>
+                <p class="card-text">Prime Minister Narendra Modi shows to the media the letter of his appointment as Prime Minister by President Droupadi Murmu after a meeting with the latter to formally stake claim for government 
+                    formation at Rashtrapati Bhavan, in New Delhi.</p>
+                <p class="card-text">Updated : June 14, 2024 23:04 IST</p>
+            </div>
+
+            <!-- 3 card  -->
+            <h4 style="background-color: white; color: maroon; margin-top: 10px; padding-left: 10px;"><i
+                    class="fa-solid fa-caret-up" style="padding-right: 5px;"></i>TOP STORIES
+            </h4>
+            <div style="color: black; margin-top: 10px;">
+                <div class="card-group">
+                    <div class="card">
+                        <img style="height: 137px;"
+                            src="https://images.indianexpress.com/2024/06/PAK-elimination.jpg?w=640"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center; background-color: lemonchiffon;">Pakistan eliminated as USA vs IRE match gets called off</h5>
+                            <p class="card-text" style="text-align: center;"> With no match possible between USA and Ireland due to wet outfield.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 45 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img style="height: 137px;"
+                            src="https://images.indianexpress.com/2024/06/korean-1.jpg?w=640"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center; background-color: lemonchiffon;">
+                                <a routerLink="/main2" style="color: black;">How Korean food evolved in India ‘beyond the initial popularity of ramen’</a></h5>
+                            <p class="card-text" style="text-align: center;">Dishes like kimchi, spicy ramen, bibimbap, and tteokbokki have seen the most notable rise in popularity.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 1 hr ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img style="height: 137px;"
+                            src="https://images.indianexpress.com/2024/06/PR-Banner-1-1-1.jpeg?w=640"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center; background-color: lemonchiffon;">DY Patil Deemed To Be University, Navi Mumbai: Where Learning Meets an Enriching Campus Life</h5>
+                            <p class="card-text" style="text-align: center;">DY Patil Deemed to be University, Navi Mumbai offers an exceptional education experience...</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 12 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <h4
+                style="background-color: white; color: maroon; margin-top: 10px; margin-bottom: 10px; padding-left: 10px;">
+                <i class="fa-solid fa-caret-up" style="padding-right: 5px;"></i>TO THE POINT
+            </h4>
+            <div class="row row-cols-1 row-cols-md-2 g-4  " style="color: rgb(67, 66, 66); text-align: center;">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://c.ndtvimg.com/2024-06/9opj9tlo_actor-darshan-_625x300_11_June_24.jpeg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><a routerLink="/main3" style="color: black;">"Cursing Me Won't Change...": Murder Accused Actor's Son's Reply To Trolls</a></h5>
+                            <p class="card-text">And even during this hard time when my mom and dad required support, cursing at me won't change that...
+                                the 15-year-old son of Kannada actor Darshan Thoogudeepa said in a social media post 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  h-100">
+                        <img style="height: 270px;"
+                            src="https://c.ndtvimg.com/2024-06/ue71th6g_hong-kong_625x300_14_June_24.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">'Impossibly Unaffordable': These 10 Cities Top The List of High-Cost Living</h5>
+                            <p class="card-text">A report highlights the intensifying struggle for affordable housing worldwide, not limited to a few major cities but spanning across various countries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img style="height: 250px;"
+                            src="https://c.ndtvimg.com/2024-06/bm97nhgg_dharmendra-pradhan-ndtv_625x300_14_June_24.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">"Why Scrap NEET?" Education Minister Amid Allegations Of Irregularities</h5>
+                            <p class="card-text">The NEET, is an entrance exam conducted by the National Testing Agency, or NTA, for admission to the undergraduate medical programme.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img style="height: 250px;"
+                            src="data:image/jpeg;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">On Camera, Woman Kidnapped From Petrol Pump </h5>
+                            <p class="card-text">A woman was allegedly kidnapped by two men from a petrol pump in broad
+                                daylight in Madhya Pradesh's Gwalior on Monday.On Camera, Woman Kidnapped From Petrol
+                                Pump </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4
+                style="background-color: white; color: maroon; margin-top: 20px; margin-bottom: 20px; padding-left: 10px;">
+                <i class="fa-solid fa-caret-up" style="padding-right: 5px;"></i>SUNDAY SPECIAL
+            </h4>
+
+            <!-- full -->
+            <div class="card mb-3" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/jin--jin-bts-122724782-16x9_0.jpg?VersionId=39qUakD9S8ru26C8AnlcbtoYdAdVsHgA&size=690:388"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 style=" color: midnightblue;" class="card-title">BTS’ Jin returns from mandatory military service, members reunite to welcome him</h5>
+                            <p style="color: rgb(67, 66, 66);" class="card-text">BTS' eldest member, Jin or Kim Seokjin, is the first from his band to be discharged from the military. All his bandmates - RM, J-hope, V, Jungkook, Jimin, and Suga - gave him a heartwarming welcome.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://6.soompi.io/wp-content/uploads/image/20240612094850_byeon-woo-seok-kim-soo-hyun-1.jpg?s=900x600&e=t"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 style=" color: midnightblue;" class="card-title">
+                            <a routerLink="/main4" style="color: blue;">5 K-Drama Male Leads Who Charmed Their Way Into Our Hearts</a></h5>
+                            <p style="color: rgb(67, 66, 66);" class="card-text">In the first half of 2024, K-dramas gave us winsome men who came bearing oodles of charm. Their dashing good-looks apart, they were smart and steadfast, gallantly wearing their hearts on their sleeves.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 12 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <!-- Search Widget -->
+            <div style="width: 300px; ">
+                <div class="card mb-4 border-0">
+
+                    <div class="card-body">
+                        <form name="search" action="#" method="post">
+                            <div class="input-group">
+                                <input type="text" name="searchtitle" class="form-control rounded-0"
+                                    placeholder="Search for..." required="">
+                                <span class="input-group-btn">
+                                    <button class="btn" type="submit"> <i class="fa fa-search"></i></button>
+                                </span>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Side Widget -->
+                <div class="card my-4 border-0">
+                    <h5 style="color: darkslateblue;" class="card-header border-0 bg-white"><i
+                            class="fa-solid fa-arrow-up-right-dots"></i>&nbsp; <b>Recent News
+                        </b>
+                    </h5>
+                    <div class="card-body">
+                        <ul class="mb-0 list-unstyled">
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded-circle"
+                                    src="https://c.ndtvimg.com/2023-11/ea131j3_rafah-crossing_625x300_05_November_23.jpg?im=FitAndFill,algorithm=dnn,width=240,height=180"
+                                    alt="" width="50px" height="50px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/world-news/evacuations-of-gazans-through-rafah-crossing-suspended-since-yesterday-report-4547657"
+                                    class="text-dark font-weight-bold">
+                                    <i>Evacuations Of Gazans Through Rafah Suspended Since Yesterday</i></a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded-circle"
+                                    src="https://c.ndtvimg.com/2023-11/euitcgmc_sarita-singh_120x90_04_November_23.jpg"
+                                    alt="" width="50px" height="50px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/world-news/nalgad-civic-body-deputy-chief-sarita-singh-killed-in-nepal-earthquake-4544325"
+                                    class="text-dark font-weight-bold">
+                                    <i>Evacuations Of Gazans Through Rafah Suspended Since Yesterday</i></a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded-circle"
+                                    src="https://c.ndtvimg.com/2023-10/ijbicas_israeli-tank-in-gaza-reuters_625x300_31_October_23.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180"
+                                    alt="" width="50px" height="50px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/world-news/israel-hamas-war-palestine-gaza-300-targets-hit-in-a-day-israels-latest-update-on-war-with-hamas-4530622"
+                                    class="text-dark font-weight-bold">
+                                    <i>Evacuations Of Gazans Through Rafah Suspended Since Yesterday</i></a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded-circle"
+                                    src="https://c.ndtvimg.com/2023-10/nc8grpo8_maratha-quota-violece_625x300_31_October_23.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180"
+                                    alt="" width="50px" height="50px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/india-news/maharashtra-gatherings-banned-in-beed-dharashiv-after-violence-over-maratha-quota-protests-4530035"
+                                    class="text-dark font-weight-bold">
+                                    <i>Gatherings Banned In Maharashtra Districts After Violence During Maratha Quota
+                                        Protests</i></a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded-circle"
+                                    src="https://i.gadgets360cdn.com/large/crypto_thumbnail_alesia_kozik_pexels_small_1637583481486.jpg"
+                                    alt="" width="50px" height="50px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.gadgets360.com/cryptocurrency/news/bitcoin-price-today-october-16-monday-ether-dogecoin-value-buy-4484783"
+                                    class="text-dark font-weight-bold">
+                                    <i>Crypto Price Today: Bitcoin Trades Above $27,000, Ether and Solana See
+                                        Recoveries</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Side Widget -->
+                <div class="card my-4 border-0">
+                    <h5 style="color: darkslateblue;" class="card-header border-0 bg-white"><i
+                            class="fa-solid fa-up-right-from-square"></i>&nbsp;<b>International</b>
+                    </h5>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="https://www.ndtv.com/world-news/cut-gaza-strip-into-two-says-israel-amid-significant-strikes-4548657"
+                                    class="text-dark font-weight-bold">
+                                    <b>1.</b> Cut Gaza Strip Into Two, Says Israel Amid "Significant Strikes"</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.ndtv.com/india-news/using-mahadevs-name-to-loot-himanta-sarmas-swipe-at-bhupesh-baghel-4548634"
+                                    class="text-dark font-weight-bold">
+                                    <b>2.</b> Using Mahadev's Name To "Loot": HImanta Sarma's Swipe At Bhupesh
+                                    Baghel</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.ndtv.com/world-news/european-jews-today-are-again-living-in-fear-eu-commission-4548617"
+                                    class="text-dark font-weight-bold">
+                                    <b>3.</b> "European Jews Today Are Again Living In Fear": EU Commission </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.ndtv.com/world-news/blinken-says-palestinian-authority-should-have-key-role-in-gazas-future-4548589"
+                                    class="text-dark font-weight-bold">
+                                    <b>4.</b> Blinken Says Palestinian Authority Should Have Key Role In Gaza's
+                                    Future</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.ndtv.com/world-news/israel-says-it-exposed-hamas-network-beneath-and-next-to-gaza-hospitals-4548568"
+                                    class="text-dark font-weight-bold">
+                                    <b>5.</b> Israel Says It Exposed Hamas Network Beneath And Next To Gaza
+                                    Hospitals</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Side Widget -->
+                <div class="card my-4 border-0">
+                    <h5 style="color: darkslateblue; " class="card-header border-0 bg-transparent"><i
+                            class="fa-solid fa-video"></i>&nbsp;<b> Trending</b></h5>
+                    <div class="card-body">
+                        <ul class="mb-0 list-unstyled">
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded"
+                                    src="https://c.ndtvimg.com/2023-08/qt2bl0oo_donald-trump-afp_120x90_25_August_23.jpg"
+                                    alt="" width="50px" height="70px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/world-news/donald-trump-set-to-testify-in-new-york-civil-fraud-trial-tomorrow-4548454"
+                                    class="text-dark font-weight-bold">
+                                    Donald Trump Set To Testify In New York Civil Fraud Trial Tomorrow</a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded"
+                                    src="https://c.ndtvimg.com/2023-09/662amtuo_pawan-kalyan-chandrababu-naidu-alliance_120x90_14_September_23.jpg"
+                                    alt="" width="50px" height="70px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/india-news/nda-aliies-bjp-pawan-kalyans-party-jana-sena-reach-understanding-for-telangana-polls-4548456"
+                                    class="text-dark font-weight-bold">
+                                    BJP, Pawan Kalyan's Party Jana Sena "Reach Understanding" For Telangana Polls</a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded"
+                                    src="https://c.ndtvimg.com/2023-08/8rr14cp8_air-india-new-look_120x90_10_August_23.jpg"
+                                    alt="" width="50px" height="70px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/world-news/air-india-suspends-tel-aviv-flights-till-november-30-as-israel-hamas-war-rages-4548459"
+                                    class="text-dark font-weight-bold">
+                                    Air India Suspends Tel Aviv Flights Till November 30 As Israel-Hamas War Rages</a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded"
+                                    src="https://c.ndtvimg.com/2023-11/o8rhsr2o_blinken-with-cyprus-president_625x300_05_November_23.jpg?im=FitAndFill,algorithm=dnn,width=240,height=180"
+                                    alt="" width="50px" height="70px">
+                                <a style="padding-left: 9px;"
+                                    href="https://www.ndtv.com/world-news/blinken-discusses-sea-route-for-gaza-aid-with-cyprus-president-4548441"
+                                    class="text-dark font-weight-bold">
+                                    Blinken Discusses Sea Route For Gaza Aid With Cyprus President</a>
+                            </li>
+                            <li class="d-flex mb-2 align-items-center">
+                                <img class="mr-2 rounded"
+                                    src="https://c.ndtvimg.com/2021-10/0th3i8i_manohar-lal-khattar_120x90_03_October_21.jpg" alt="" width="50px" height="70px">
+                                    <a style="padding-left: 9px;"
+                                        href="https://www.ndtv.com/india-news/haryana-announces-free-transportation-for-school-students-in-villages-4548406"
+                                        class="text-dark font-weight-bold">
+                                        Haryana Announces Free Transportation For School Students In Villages</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background-color: white;">
+                        <h5 style="color: darkslateblue; " class="card-header border-0 bg-transparent"><i
+                                class="fa-solid fa-video"></i>&nbsp;<b>Most Popular</b></h5>
+                    </div>
+                    <div class="card my-4 border-0">
+                        <div class="card-body p-2">
+                            <iframe width="100%" height="180px" class="youtube"
+                                src="https://www.youtube.com/embed/QnOMca-d8Lk?si=FQVR9qtiDgVVFGf7" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="card my-4 border-0">
+                        <div class="card-body p-2">
+                            <iframe width="100%" height="180px" class="youtube"
+                                src="https://www.youtube.com/embed/e35lWNpg76Q?si=_63mpaUDdwgrdnzZ" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <img style="width: 300px; height: 220px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                            src="https://dcassetcdn.com/design_img/1708257/505401/505401_9348563_1708257_bcb6fa3d_image.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div>
+            <div class="footer-area  ">
+                <div style="background-color: rgb(58, 59, 59); padding-top: 20px;" class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="float-left list-unstyled ">
+                                <li class="mb-2">
+                                    <h3 class="foot">COMPANY</h3>
+                                </li>
+                                <li class="mb-2"><a href="#">Environment</a></li>
+                                <li class="mb-2"><a href="#">Religion</a></li>
+                                <li class="mb-2"><a href="#">Fashion</a></li>
+                                <li class="mb-2"><a href="#">Terrorism</a></li>
+                                <li class="mb-2"><a href="#">Conflicts</a></li>
+    
+    
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="float-left list-unstyled ">
+                                <li class="mb-2">
+                                    <h3 class="foot">PRODUCT</h3>
+                                </li>
+                                <li class="mb-2"><a href="#">Medical Research</a></li>
+                                <li class="mb-2"><a href="#">Children s Health</a></li>
+                                <li class="mb-2"><a href="#">Around the World</a></li>
+                                <li class="mb-2"><a href="#">Ad Choices</a></li>
+    
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="float-left list-unstyled ">
+                                <li class="mb-2">
+                                    <h3 class="foot">T & C</h3>
+                                </li>
+                                <li class="mb-2"><a href="#">Commercial</a></li>
+                                <li class="mb-2"><a href="#">Find A Home</a></li>
+                                <li class="mb-2"><a href="#">Mortgage Calculator</a></li>
+                                <li class="mb-2"><a href="#">My Real Estate</a></li>
+                                <li class="mb-2"><a href="#">The High End</a></li>
+    
+    
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="float-left list-unstyled ">
+                                <li class="mb-2">
+                                    <h3 class="foot"> LINK</h3>
+                                </li>
+                                <li class="mb-2"><a href="#">Politics</a></li>
+                                <li class="mb-2"><a href="#">Opinion</a></li>
+                                <li class="mb-2"><a href="#">N.Y.</a></li>
+                                <li class="mb-2"><a href="#">Science</a></li>
+                                <li class="mb-2"><a href="#">Business</a></li>
+    
+    
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="float-left list-unstyled ">
+                                <li class="mb-2">
+                                    <h3 class="foot">CONTENT</h3>
+                                </li>
+                                <li class="mb-2"><a href="#">Arts</a></li>
+                                <li class="mb-2"><a href="#">Style</a></li>
+                                <li class="mb-2"><a href="#">Food</a></li>
+                                <li class="mb-2"><a href="#">Travel</a></li>
+    
+    
+    
+                            </ul>
+                        </div>
+                        <div class="col d-none d-lg-block">
+                            <ul class="float-left list-unstyled ">
+                                <li class="mb-2">
+                                    <h3 class="foot">MEDIA</h3>
+                                </li>
+                                <li class="mb-2"><a href="#">Basketball</a></li>
+                                <li class="mb-2"><a href="#">Football: College</a></li>
+                                <li class="mb-2"><a href="#">Football: N.F.L.</a></li>
+    
+                                <li class="mb-2"><a href="#">Hockey</a></li>
+                                <li class="mb-2"><a href="#">Soccer</a></li>
+    
+                            </ul>
+    
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; padding-top: 20px;padding-bottom: 20px; background-color: rgb(103, 102, 102);">
+                        <i class="fa-brands fa-facebook" style="color: #4887f3; margin-left: 10px; font-size: 30px;"> </i>
+                        <h3 style="color: aliceblue; margin-left: 9px;">Facebook</h3>
+                        <i class="fa-brands fa-twitter" style="color: #479ef6; margin-left: 30px; font-size: 30px;"></i>
+                        <h3 style="color: aliceblue; margin-left: 9px;">Twitter</h3>
+                        <i class="fa-brands fa-youtube" style="color: #f83030; margin-left: 30px; font-size: 30px;"></i>
+                        <h3 style="color: aliceblue; margin-left: 9px;">YouTube</h3>
+                        <i class="fa-regular fa-copyright" style="color: #ffffff; margin-left: 100px ;font-size: 30px;"></i>
+                        <h5 style="color: white;">TheDailyBrief free news website - All Rights Reserved</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    
+    </html>

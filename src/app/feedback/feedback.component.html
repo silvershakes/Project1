@@ -1,0 +1,260 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<div class="container-fluid">
+    <div class="row" style="margin-top: 4%">
+       <!-- Blog Entries Column -->
+       <div class="col-md-2 mt-4">
+          <!-- Categories Widget -->
+          <div class="card my-4 border-0">
+             <h5 class="card-header bg-white border-0">Categories</h5>
+             <div class="card-body">
+                <div class="row">
+                   <div class="col-lg-12">
+                    <ul class="list-unstyled mb-0">
+                      <li class=" mb-2">
+                      <a routerLink = "/entertainment" href="#" class="text-secondary">ENTERTAINMENT</a>
+                      </li>
+                      <li class=" mb-2">
+                      <a routerLink = "/admin" href="#" class="text-secondary">TECHNOLOGY</a>
+                      </li>
+                      <li class=" mb-2">
+                      <a routerLink = "/lifestyle" href="#" class="text-secondary">LIFESTYLE</a>
+                      </li>
+                      <li class=" mb-2">
+                      <a href="#" class="text-secondary">POLITICAL</a>
+                      </li>
+                      <li class=" mb-2">
+                      <a href="#" class="text-secondary">SPORTS</a>
+                      </li>
+                      <li class=" mb-2">
+                      <a routerLink = "/spiritual" href="#" class="text-secondary">SPIRITUAL</a>
+                      </li>
+                      <li class=" mb-2">
+                      <a href="#" class="text-secondary">EDUCATION</a>
+                      </li>
+                   </ul>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <h4 style="text-align: center; color:crimson ; margin-top: 20px; margin-bottom: 20px;background-color: lightgray;"><b> Bullet News</b></h4>
+         <img src="https://c.ndtvimg.com/2023-11/bpqubmog_virat-kohli-afp_625x300_03_November_23.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="" height="168px">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus qui eum nemo? Perspiciatis perferendis commodi cumque</p>
+         <br>
+         <img src="https://c.ndtvimg.com/2023-11/bpqubmog_virat-kohli-afp_625x300_03_November_23.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="" height="168px">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus qui eum nemo? Perspiciatis perferendis commodi cumque</p>
+         <br>
+         <img src="https://c.ndtvimg.com/2023-11/bpqubmog_virat-kohli-afp_625x300_03_November_23.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="" height="168px">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus qui eum nemo? Perspiciatis perferendis commodi cumque</p>
+         <br>
+         <img src="https://c.ndtvimg.com/2023-11/bpqubmog_virat-kohli-afp_625x300_03_November_23.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="" height="168px">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus qui eum nemo? Perspiciatis perferendis commodi cumque</p>
+         <br>
+         <img src="https://c.ndtvimg.com/2023-11/bpqubmog_virat-kohli-afp_625x300_03_November_23.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="" height="168px">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus qui eum nemo? Perspiciatis perferendis commodi cumque</p>
+         <br>
+       </div>
+
+<div class="container feedback-container">
+    <h2 style="font-family: 'Perpetua'; text-align: center;"><b>Feedback Form</b></h2>
+    <form #feedbackForm="ngForm" (ngSubmit)="submitFeedback()">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" [(ngModel)]="feedback.fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="feedback.email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone No:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="feedback.phone" required>
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" id="comment" name="comment" [(ngModel)]="feedback.comment" required></textarea>
+      </div>
+      <div class="button-group">
+        <button type="submit" class="btn btn-primary" [disabled]="feedbackForm.invalid">Submit</button>
+        <button type="button" class="btn btn-secondary" (click)="resetForm()">Reset</button>
+      </div>
+      <div class="alert alert-success mt-3" *ngIf="feedbackSubmitted">Feedback submitted!</div>
+    </form>
+    <br><br>
+
+    <h2 style="font-family: Garamond; text-align: center;"><i class="fa-solid fa-newspaper"></i>&nbsp;<b>Featured News</b></h2>
+  <div class="row news-container">
+    <div class="col-md-4">
+      <div class="news-article">
+        <img src="https://c.ndtvimg.com/2022-12/h3qjno2o_india-police-generic_120x90_23_December_22.jpg" alt="News Image 1" class="img-fluid">
+        <h3>UP Teen Gang-Raped, Impregnated, 1 Arrested: Cops</h3>
+        <p>A 13-year-old girl was allegedly raped by four men and impregnated in Izzatnagar area here, police said on Tuesday.</p>
+        <a href="https://www.ndtv.com/cities/up-teen-gang-raped-impregnated-1-arrested-cops-4555553" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="news-article">
+        <img src="https://c.ndtvimg.com/2023-10/huu7spk_israel-army_120x90_12_October_23.jpg" alt="News Image 2" class="img-fluid">
+        <h3>One Month On, Israel Says Troops "In Heart Of Gaza City"</h3>
+        <p>Defence Minister Yoav Gallant said as the nation marked one month of war with Hamas in the Palestinian territory.</p>
+        <a href="https://www.ndtv.com/world-news/one-month-on-israel-says-troops-in-heart-of-gaza-city-4555550" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="news-article">
+        <img src="https://c.ndtvimg.com/aw38oih9zc6_self-driving-car-generic-istock_120x90.jpg" alt="News Image 3" class="img-fluid">
+        <h3>Car Makers Not Owners Liable For Self-Driving Crashes</h3>
+        <p>The makers the owners of self-driving cars legally liable for any crashes under a framework...</p>
+        <a href="https://www.ndtv.com/world-news/britain-says-car-makers-not-owners-liable-for-self-driving-crashes-4555517" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  <h2 style="font-family: Garamond; text-align: center;"><b><i class="fa-solid fa-video"></i>&nbsp;Featured Videos</b></h2>
+  <div class="row video-row">
+    <div class="col-md-6">
+      <div class="video-article">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ssrfjrrqvoo?si=Fobk73QQk"></iframe>
+        </div>
+        <p>आज 01 नवम्बर 2023 के मुख्य समाचार | Iran | Israel Hamas War </p>
+        <a href="https://www.youtube.com/watch?v=ssrfjrrqvoo" class="btn btn-primary">Watch Video</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="video-article">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nt3SPr07KNk?si=5gzxmb8tKZd2XT2l"></iframe>
+        </div>
+        <p>Israel Attack on Gaza Latest | Hezbollah | Hamas | Qatar</p>
+        <a href="https://www.youtube.com/watch?v=nt3SPr07KNk" class="btn btn-primary">Watch Video</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="video-article">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oUMlJj3bSrs?si=Wd2OU9W"></iframe>
+        </div>
+        <p>Battle For Revenge In Madhya Pradesh | Campaign Trail Exclusive</p>
+        <a href="https://www.youtube.com/watch?v=oUMlJj3bSrs" class="btn btn-primary">Watch Video</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="video-article">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2uCkupMq2-8?si=0JeybRrX-CFY-X2y"></iframe>
+        </div>
+        <p>Check out the Biggest 15 News of the Day !</p>
+        <a href="https://www.youtube.com/watch?v=2uCkupMq2-8" class="btn btn-primary">Watch Video</a>
+      </div>
+    </div>
+  </div>      
+</div>
+
+
+  <div class="footer-area  ">
+    <div style="background-color: rgb(58, 59, 59); padding-top: 20px;" class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <ul class="float-left list-unstyled ">
+                    <li class="mb-2"> <h3 class="foot">COMPANY</h3> </li>
+                    <li class="mb-2"><a href="#">Environment</a></li>
+                    <li class="mb-2"><a href="#">Religion</a></li>
+                    <li class="mb-2"><a href="#">Fashion</a></li>
+                    <li class="mb-2"><a href="#">Terrorism</a></li>
+                    <li class="mb-2"><a href="#">Conflicts</a></li>
+                    
+ 
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="float-left list-unstyled ">
+                    <li class="mb-2">
+                        <h3 class="foot">PRODUCT</h3>
+                    </li>
+                    <li class="mb-2"><a href="#">Medical Research</a></li>
+                    <li class="mb-2"><a href="#">Children s Health</a></li>
+                    <li class="mb-2"><a href="#">Around the World</a></li>
+                    <li class="mb-2"><a href="#">Ad Choices</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="float-left list-unstyled ">
+                    <li class="mb-2">
+                        <h3 class="foot">T & C</h3>
+                    </li>
+                    <li class="mb-2"><a href="#">Commercial</a></li>
+                    <li class="mb-2"><a href="#">Find A Home</a></li>
+                    <li class="mb-2"><a href="#">Mortgage Calculator</a></li>
+                    <li class="mb-2"><a href="#">My Real Estate</a></li>
+                    <li class="mb-2"><a href="#">The High End</a></li>
+                 
+ 
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="float-left list-unstyled ">
+                    <li class="mb-2">
+                        <h3 class="foot"> LINK</h3>
+                    </li>
+                    <li class="mb-2"><a href="#">Politics</a></li>
+                    <li class="mb-2"><a href="#">Opinion</a></li>
+                    <li class="mb-2"><a href="#">N.Y.</a></li>
+                    <li class="mb-2"><a href="#">Science</a></li>
+                    <li class="mb-2"><a href="#">Business</a></li>
+                   
+ 
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="float-left list-unstyled ">
+                    <li class="mb-2">
+                        <h3 class="foot">CONTENT</h3>
+                    </li>
+                    <li class="mb-2"><a href="#">Arts</a></li>
+                    <li class="mb-2"><a href="#">Style</a></li>
+                    <li class="mb-2"><a href="#">Food</a></li>
+                    <li class="mb-2"><a href="#">Travel</a></li>
+                   
+ 
+ 
+                </ul>
+            </div>
+            <div class="col d-none d-lg-block">
+                <ul class="float-left list-unstyled ">
+                    <li class="mb-2">
+                        <h3 class="foot">MEDIA</h3>
+                    </li>
+                    <li class="mb-2"><a href="#">Basketball</a></li>
+                    <li class="mb-2"><a href="#">Football: College</a></li>
+                    <li class="mb-2"><a href="#">Football: N.F.L.</a></li>
+                    
+                    <li class="mb-2"><a href="#">Hockey</a></li>
+                    <li class="mb-2"><a href="#">Soccer</a></li>
+ 
+                </ul>
+ 
+            </div>
+        </div>
+        <div style="display: flex; padding-top: 20px;padding-bottom: 20px; background-color: rgb(103, 102, 102);">
+            <i  class="fa-brands fa-facebook" style="color: #4887f3; margin-left: 10px; font-size: 40px;"> </i> 
+            <h3 style="color: aliceblue; margin-left: 9px;">Facebook</h3>
+            <i class="fa-brands fa-twitter" style="color: #479ef6; margin-left: 30px; font-size: 40px;"  ></i>
+            <h3 style="color: aliceblue; margin-left: 9px;">Twitter</h3>
+            <i class="fa-brands fa-youtube" style="color: #f83030; margin-left: 30px; font-size: 40px;"></i>
+            <h3 style="color: aliceblue; margin-left: 9px;">YouTube</h3>
+            <i class="fa-regular fa-copyright" style="color: #ffffff; margin-left: 100px ;font-size: 30px;"></i> 
+            <h5 style="color: white;">TheDailyBrief<br> All Rights Reserved</h5>
+        </div>
+    </div>
+ 
+ </div>
+ 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+ </div>
+  

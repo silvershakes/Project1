@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <div style="background-color: yellow; height: 300px;" class="upper">
+            <div class="container">
+                <h1 style=" padding-top: 30px;">What do our user say ?</h1>
+            </div>
+            <!-- feedback  -->
+            <div class="container" style="display: flex;">
+                <div class="col-sm-3"
+                    style="border: 2px solid white; border-radius: 9px; background-color: white;  padding: 20px; margin-top: 40px;">
+                    <!-- <div style="border: 2px solid white; border-radius: 9px; width: 200px; background-color: white;  padding: 20px;"> -->
+                    <span style="color: orangered;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i></span>
+                    <p style="margin-top: 10px;">It is an essential aspect of modern life,and addresses the equilibrium
+                        between one's professional
+                        and personal life.</p>
+                    <img style="height: 100px; width: 100px; border-radius: 50%;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRf_IWZ00wKUvH8V8PCdrnONwwPrXPvMQIKg&usqp=CAU"
+                        alt="">
+                    <h6 style="padding-left: 15px; padding-top: 10px;">James Joe </h6>
+                </div>
+                <div class="col-sm-3"
+                    style="border: 2px solid white; border-radius: 9px; background-color: white;  padding: 20px; margin-top: 40px; margin-left: 10px;">
+                    <!-- <div style="border: 2px solid white; border-radius: 9px; width: 200px; background-color: white;  padding: 20px;"> -->
+                    <span style="color: orangered;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <p style="margin-top: 10px;">Its quick and accurate reporting across various categories including
+                        politics, business, sports, and entertainment.  Impressive...!
+                    </p>
+                    <img style="height: 100px; width: 100px; border-radius: 50%;"
+                        src="https://thumbs.dreamstime.com/b/portrait-cheerful-indian-senior-old-man-pointing-presenting-hands-folded-pose-retired-wears-white-kurta-195341827.jpg"
+                        alt="">
+                    <h6 style="padding-left: 5px; padding-top: 10px;">Shrikant Sharma</h6>
+                </div>
+                <div class="col-sm-3"
+                    style="border: 2px solid white; border-radius: 9px; background-color: white;  padding: 20px; margin-top: 40px; margin-left: 10px;">
+                    <!-- <div style="border: 2px solid white; border-radius: 9px; width: 200px; background-color: white;  padding: 20px;"> -->
+                    <span style="color: orangered;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></span>
+                    <p style="margin-top: 10px;">
+                        A well-established newspaper that provides fast and credible news coverage on a wide range of
+                        topics..It's helpful</p>
+                    <img style="height: 100px; width: 100px; border-radius: 50%;"
+                        src="data:image/jpeg;base64,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"
+                        alt="">
+                    <h6 style="padding-left:5px; padding-top: 10px;">Mina Datta </h6>
+                </div>
+                <!-- <div class="col-sm-3"
+                    style="border: 2px solid white; border-radius: 9px; background-color: white;  padding: 20px; margin-top: 40px; margin-left: 10px;">
+                    <span style="color: orangered;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i></span>
+                    <p style="margin-top: 10px;">It offers fast and reliable news reporting with a focus on in-depth
+                        analysis and quality journalism. Quiet Good..!
+                        .</p>
+                    <img style="height: 100px; width: 100px; border-radius: 50%;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxctjU21pUENIsGN1F4qY21P7GfdEbhTMp2g&s" alt="">
+                    <h6 style="padding-left: 15px; padding-top: 10px;">Swati Deshmukh </h6>
+                </div> -->
+                <div class="col-sm-3"
+                    style="border: 2px solid white; border-radius: 9px; background-color: white;  padding: 20px; margin-top: 40px; margin-left: 10px;">
+                    <span style="color: orangered;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i></span>
+                    <p style="margin-top: 10px;">Quiet Good..!
+                        .</p>
+                    <img style="height: 100px; width: 100px; border-radius: 50%;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScGQQPJTeRXYxfbXVhLLXPl4aCJCexZ4dS7Q&s" alt="">
+                    <h6 style="padding-left: 15px; padding-top: 10px;">Minal Pawar</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- features -->
+    <div style="background-color: rgb(211, 207, 207); " class="mid">
+        <div class="container">
+            <h1 style="padding-top: 200px;">What features do users want in the future?</h1>
+        </div>
+        <div class="container" style="display: flex;">
+            <div class="col-sm-6">
+                <div style="padding-top: 30px; padding-bottom: 20px; ">
+                    <div class="card">
+                        <div class="card-header">
+                            Topic-specific alerts
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Allowing users to select specific topics or categories they want to
+                                    receive breaking news notifications for, ensuring they get updates relevant to their interests.</p>
+                                <footer class="blockquote-footer">Minakshi Patil <cite title="Source Title">
+                                    </cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div style="padding-top: 30px; padding-bottom: 20px; margin-left: 10px; ">
+                    <div class="card">
+                        <div class="card-header">
+                            Quiet hours
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Allowing users to set quiet hours during which they won't receive any breaking news
+                                    notifications, ensuring uninterrupted downtime. Quiet interesting..</p>
+                                <footer class="blockquote-footer">Aman Gupta<cite title="Source Title">
+                                    </cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="background-color: yellow;">
+            <div class="container" style="display: flex;">
+                <div class="col-sm-6">
+                    <div style="padding-top: 30px; padding-bottom: 20px; ">
+                        <div class="card">
+                            <div class="card-header">
+                                Customizable frequency
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Providing options for users to choose the frequency of breaking news alerts, such
+                                        as
+                                        immediate notifications, hourly summaries, or daily digests.</p>
+                                    <footer class="blockquote-footer">Sai Tambe <cite title="Source Title">
+                                        </cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div style="padding-top: 30px; padding-bottom: 20px; margin-left: 10px; ">
+                        <div class="card">
+                            <div class="card-header">
+                                Follow-up updates
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Offering subsequent updates or follow-ups to breaking news stories for a more
+                                        complete understanding of ongoing events. Do visit our site..!</p>
+                                    <footer class="blockquote-footer">Cristina D<cite title="Source Title">
+                                        </cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          
+            <!-- form -->
+            <div style="padding-bottom: 20px;">
+                <form #feedbackForm="ngForm" (ngSubmit)="submitFeedback()" action="#"  style="border: 4px solid white; width: 400px; margin-left: 35%; padding-bottom: 20px; border-radius: 20px; margin-top: 50px; background-color: rgb(100, 89, 175); color: white;">
+
+                    <input style="margin-left: 60px;margin-top: 30px;" type="radio" id="comment" name="com" value="comments">
+                    <label style="padding-left: 10px; font-size: 20px;" for="comment"><b>Comment</b></label>
+
+                    <input style="margin-left: 50px;" type="radio" id="update" name="com" value="updates">
+                    <label style="padding-left: 10px; font-size: 20px;" for="update"><b>Update</b></label>
+                    <br>
+                    <input style="margin: 5px; margin-top: 10px; margin-left: 40px; align-items: center; width: 300px;" type="text" class="form-control" id="Name" name="Name" [(ngModel)]="feedback.Name" required placeholder="First Name"><br>
+
+                    <input style="margin: 5px;  margin-left: 40px; width: 300px;"  type="text" class="form-control" id="l_name" name="l_name" [(ngModel)]="feedback.l_name" required placeholder="Last Name">
+                    <br>
+
+                    <input type="email" name="email" class="form-control" id="email" [(ngModel)]="feedback.email" required placeholder="Email ID"
+                        style="margin: 5px; margin-top: 10px;  margin-left: 40px; width: 300px;">
+                    <br>
+                    <label style="margin-left: 10%; margin-top: 10px;" for="#"><b>write a message</b></label>
+
+                    <textarea style="margin-left: 40px; margin-top: 10px; border-radius: 5px; width: 300px;" class="form-control" id="comment" name="comment" [(ngModel)]="feedback.comment" required rows="3"
+                        cols="10">
+
+                    </textarea><br>
+                    <button  style="margin-left: 80px;" type="submit" class="btn btn-primary" [disabled]="feedbackForm.invalid">Submit</button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-secondary" (click)="resetForm()">Reset</button>
+
+                    <div class="alert alert-success mt-3" *ngIf="feedbackSubmitted">Form submitted!</div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

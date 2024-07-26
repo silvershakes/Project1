@@ -1,0 +1,64 @@
+<div class="container">
+    <h4 style="font-family: Papyrus; font-weight: bold; padding-left: 70px;">
+        If you are having any issues related to showing news, just fill out
+        this form to raise your issue with admin:
+      </h4>
+    <form class="form-container" (ngSubmit)="onSubmit(issueForm)" #issueForm="ngForm" autocomplete="on" validate >
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="issue.name" required>
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <input type="text" class="form-control" id="category" name="category" [(ngModel)]="issue.category" required>
+      </div> 
+      <div class="mb-3">
+        <label for="news_issue" class="form-label">Issue on which News</label>
+        <input type="text" class="form-control" id="news_issue" name="news_issue" [(ngModel)]="issue.news_issue" required>
+      </div>
+      <div class="mb-3">
+        <label for="details" class="form-label">Details of issue? Please feel free to enter</label>
+        <textarea class="form-control" id="details" name="details" [(ngModel)]="issue.details" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="issue.email" required>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="phonenumber" class="form-label">Phone No</label>
+        <input type="tel" class="form-control" id="phonenumber" name="phone" [(ngModel)]="issue.phone" required>
+      </div>
+      <button type="submit" class="btn btn-success" style="width: 100%; height: 50px; font-size: larger;">Submit</button>
+    </form>
+  
+    <!-- Success message -->
+    <div *ngIf="successMessage" class="alert alert-success mt-3">
+      Your Issue has been submitted successfully!
+    </div>
+  
+    <h4>Submitted Issues</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>News Issue</th>
+          <th>Details</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let issue of issues">
+          <td>{{ issue.name }}</td>
+          <td>{{ issue.category }}</td> 
+          <td>{{ issue.news_issue }}</td>
+          <td>{{ issue.details }}</td>
+          <td>{{ issue.email }}</td>
+          <td>{{ issue.phone }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

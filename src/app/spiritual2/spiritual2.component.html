@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        li {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(162, 163, 161);
+        }
+
+        .foot {
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(245, 246, 246)">
+    <div>
+        <br><br>
+    </div>
+    <div class="container-fluid" style="display: flex;">
+        <div class="col-md-2" style=" padding-right: 5px; ">
+            <!-- catagory -->
+            <div class="card  ">
+                <!-- <h5 class="card-header bg-white border-0" style="text-align: center; color: darkslategrey;">Categories</h5> -->
+                <div style="padding:10px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0">
+                                <h5 style="color: mediumslateblue;"><i style="padding-right: 7px;"
+                                        class="fa-solid fa-bars"></i><b>CATEGORY</b></h5>
+                                <li class=" mb-2">
+                                    <a routerLink="/entertainment" href="#"
+                                        class="text-secondary"><b>ENTERTAINMENT</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/technology" href="#" class="text-secondary"><b>TECHNOLOGY</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/lifestyle" href="#" class="text-secondary"><b>LIFESTYLE</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/political" href="#" class="text-secondary"><b>POLITICAL</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/sports" href="#" class="text-secondary"><b>SPORTS</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/spiritual" href="#" class="text-secondary"><b>SPIRITUAL</b></a>
+                                </li>
+                                <li class=" mb-2">
+                                    <a routerLink="/education" href="#" class="text-secondary"><b>EDUCATION</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Advertisement -->
+            <div style="border-radius: 5px; text-align: center; margin-top: 10px; padding: 5px;">
+                <h6 style="color:rgb(236, 86, 60);background-color:white ;">Advertisement</h6>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXdvk0qpMhQcQtN1_UwM5F-KJJOWxM0vZypg&usqp=CAU"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="data:image/jpeg;base64,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"
+                        alt="">
+                </div>
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAAsSANuHT-HER9cuzRclxbpdgOUrG7dM_9w&usqp=CAU"
+                        alt="">
+                </div><br>
+
+                <div>
+                    <iframe width="200px" height="150px" class="youtube"
+                        src="https://www.youtube.com/embed/fvJdp7LYZrk?feature=shared" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div><br>
+
+                <div>
+                    <img style="width: 200px; border-radius: 2px; border: 2px solid white; margin-top: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRg0RSzVdsW4y0HPtHNHchLrxZIUJ3diENA&usqp=CAU"
+                        alt="">
+                </div><br>
+                <div>
+                    <iframe width="200px" height="110px" class="youtube"
+                        src="https://www.youtube.com/embed/fvJdp7LYZrk?feature=shared" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- life -->
+
+        <div style="padding-bottom: 0px; border: 2px solid white; height: 400px; margin-left: 10px; width: 900px; margin-right: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
+            class="card text-white">
+            <div class="story__cat">
+                <h4 class="B1S3_cat__title___NXs1" style="margin-left: 10px; margin-top: 8px;">Media</h4>
+            </div>
+            <h2 style="font-size: 28px;" class=""><a
+                    style="color: black; font-weight: bold; text-decoration: none; margin-left: 10px;"
+                    title="Pandemic spurs video streaming platforms to add fitness, spirituality to content portfolio" href="">
+                    Pandemic spurs video streaming platforms to add fitness, &nbsp;spirituality to content portfolio</a></h2>
+            <div class="B1S3_story__shortcont__inicf">
+                <p style="color: black; margin-left: 10px;">Check out these simple skincare routines that will help you achieve your skin goals without much effort as seasons change.</p>
+            </div>
+            <img style="height: 396px;" src="https://images.livemint.com/img/2020/07/09/600x338/a9ffa308-c102-11ea-afb4-4157540c9ba7_1594260369163_1594260536487.jpg" class="card-img"
+                alt="..." style="max-width: 100%; max-height: 100%; border-radius: 0;">
+
+            <div
+                style="border: 1px solid #ddd; border-radius: 0px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: left;">
+                <p
+                    style="color: black; margin-left: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: left;">
+                    <br>
+                    
+                    <b>NEW DELHI :</b> The covid-19 crisis has prompted video streaming platforms to expand their content portfolio beyond entertainment to genres such as health, fitness and spirituality to cater to greater demand and new audience segments.<br><br>
+
+                    Disney+Hotstar entered into a strategic partnership with fitness, yoga and nutrition content producer Brilliant Wellness in June to launch 100 curated shows with its fitness experts, and yoga and spiritual gurus, along with celebrity nutritionists. Startups Sarva and Cult.fit also launched workout models on the video streaming platform.<br><br>
+
+                    Likewise, VOOT, the video-on-demand platform owned by Viacom18 Media Pvt. Ltd, has tied up with Cult.fit and Isha Foundation, a non-profit spiritual organization founded by Sadhguru Jaggi Vasudev, besides online higher education company upGrad.<br><br>
+
+                    Meanwhile, ZEE5 launched a chat show called Dabur Honey Hello Fitness in collaboration with the consumer goods company, besides offering a range of fitness programmes in partnership with ZEE LIVE.<br><br>
+
+                    The focus on these niche genres comes at a time when Indian households, especially during the three months of lockdown, veered towards a more holistic way of consuming content, going beyond general entertainment. The average time spent by users on religious or spirituality content rose by 27% between January and April, shows data from media measurement and analytics company Comscore.<br><br>
+
+                    Health and fitness have also become an extremely important aspect of our stressful lives, and never more so than today, said a Disney spokesperson, adding that the aim is to help people lead “happier lives". The content is available in English, Hindi and Telugu.<br><br>
+
+                    “There was always a plan to add these new sections, but covid accentuated and helped fast-track that process as there was much opportunity to grow, given that OTT (over-the-top video steaming) emerged as the primary mode of consumption," said Aparna Acharekar, programming head, ZEE5.<br><br>
+
+                    <b>Milestone Alert!</b><br><br>
+                    Livemint tops charts as the fastest growing news website in the world 🌏 Click here to know more.
+                    <br><br>
+                    <br><br>
+                    <i style="color: gray;">Published By: Lata Jha
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Published
+                        On: Nov 09, 2023</i>
+                </p>
+            </div>
+        </div>
+        <div>
+
+            <!-- Recommend Widget -->
+            <div style="width: 300px; ">
+                <div class="card mb-4 border-0">
+
+                    <div class="card-body">
+                        <h5 style="color: mediumslateblue;" class="card-header border-0 bg-white"><i
+                                class="fa-solid fa-up-right-from-square"></i>&nbsp;&nbsp;<b>Recommended</b></h5>
+                        <img src="https://static.toiimg.com/thumb/msid-105453371,imgsize-25340,width-400,resizemode-4/105453371.jpg"
+                            alt="" width="420px" style="border-radius: 0;">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Masks, social distancing: WHO urges China
+                            to bring back Covid-like</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://timesofindia.indiatimes.com/world/china/masks-social-distancing-who-urges-china-to-bring-back-covid-like-measures-amid-mystery-pneumonia-outbreak/articleshow/105453354.cms">investing.com</a>
+
+                        <img src="https://static.toiimg.com/thumb/msid-104928797,imgsize-838599,width-400,resizemode-4/104928797.jpg"
+                            alt="" width="270px" style="border-radius: 0;">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Karnataka on high alert after Zika virus
+                            found in mosquito sample..</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://timesofindia.indiatimes.com/city/bengaluru/ktaka-on-high-alert-after-zika-virus-found-in-mosquito-sample/articleshow/104928791.cms">media.com</a>
+                        <br><br>
+
+                        <img src="https://static.toiimg.com/thumb/msid-104381769,imgsize-599904,width-400,resizemode-4/104381769.jpg"
+                            alt="" width="270px" style="border-radius: 0;">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">With India not issuing visas, passengers
+                            from Canada in a fix..</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://timesofindia.indiatimes.com/india/canada-india-visa-impasse-puts-flyers-with-tickets-in-fix/articleshow/104381754.cms">media.com</a>
+                        <br><br>
+
+                        <iframe width="100%" height="180px" class="youtube"
+                            src="https://www.youtube.com/embed/gsCZYYLGlvM?feature=shared" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                        <br><br>
+
+                        <img src="https://static.toiimg.com/thumb/msid-105448950,width-400,resizemode-4/105448950.jpg"
+                            alt="" width="270px" style="border-radius: 0;">
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Fight deepfakes or face action, government
+                            tells social media, Net cos</p>
+                        <a style="color: rgb(129, 120, 120); text-decoration: none;"
+                            href="https://timesofindia.indiatimes.com/india/fight-deepfakes-or-face-action-government-tells-social-media-net-cos/articleshow/105482984.cms">investing.com</a>
+                        <br><br>
+                        <div>
+                            <iframe width="100%" height="120px" class="youtube"
+                                src="https://www.youtube.com/embed/ew7-Z2xCMgE?feature=shared" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div>
+        <div class="footer-area  ">
+            <div style="background-color: rgb(58, 59, 59); padding-top: 20px;" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">COMPANY</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Environment</a></li>
+                            <li class="mb-2"><a href="#">Religion</a></li>
+                            <li class="mb-2"><a href="#">Fashion</a></li>
+                            <li class="mb-2"><a href="#">Terrorism</a></li>
+                            <li class="mb-2"><a href="#">Conflicts</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">PRODUCT</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Medical Research</a></li>
+                            <li class="mb-2"><a href="#">Children s Health</a></li>
+                            <li class="mb-2"><a href="#">Around the World</a></li>
+                            <li class="mb-2"><a href="#">Ad Choices</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">T & C</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Commercial</a></li>
+                            <li class="mb-2"><a href="#">Find A Home</a></li>
+                            <li class="mb-2"><a href="#">Mortgage Calculator</a></li>
+                            <li class="mb-2"><a href="#">My Real Estate</a></li>
+                            <li class="mb-2"><a href="#">The High End</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot"> LINK</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Politics</a></li>
+                            <li class="mb-2"><a href="#">Opinion</a></li>
+                            <li class="mb-2"><a href="#">N.Y.</a></li>
+                            <li class="mb-2"><a href="#">Science</a></li>
+                            <li class="mb-2"><a href="#">Business</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">CONTENT</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Arts</a></li>
+                            <li class="mb-2"><a href="#">Style</a></li>
+                            <li class="mb-2"><a href="#">Food</a></li>
+                            <li class="mb-2"><a href="#">Travel</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <ul class="float-left list-unstyled ">
+                            <li class="mb-2">
+                                <h3 class="foot">MEDIA</h3>
+                            </li>
+                            <li class="mb-2"><a href="#">Basketball</a></li>
+                            <li class="mb-2"><a href="#">Football: College</a></li>
+                            <li class="mb-2"><a href="#">Football: N.F.L.</a></li>
+
+                            <li class="mb-2"><a href="#">Hockey</a></li>
+                            <li class="mb-2"><a href="#">Soccer</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div
+                    style="display: flex; padding-top: 20px;padding-bottom: 20px; background-color: rgb(103, 102, 102);">
+                    <i class="fa-brands fa-facebook" style="color: #4887f3; margin-left: 10px; font-size: 30px;"> </i>
+                    <h3 style="color: aliceblue; margin-left: 9px;">Facebook</h3>
+                    <i class="fa-brands fa-twitter" style="color: #479ef6; margin-left: 30px; font-size: 30px;"></i>
+                    <h3 style="color: aliceblue; margin-left: 9px;">Twitter</h3>
+                    <i class="fa-brands fa-youtube" style="color: #f83030; margin-left: 30px; font-size: 30px;"></i>
+                    <h3 style="color: aliceblue; margin-left: 9px;">YouTube</h3>
+                    <i class="fa-regular fa-copyright" style="color: #ffffff; margin-left: 100px ;font-size: 30px;"></i>
+                    <h5 style="color: white;">TheDailyBrief free news website - All Rights Reserved</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

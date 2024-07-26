@@ -1,0 +1,72 @@
+<div class="container">
+    <h4>If you are interested to work in this category, please fill this form:</h4>
+    <form class="form-container" (ngSubmit)="onSubmit(form)" #form="ngForm" autocomplete="on">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" ngModel required>
+      </div>
+      <div class="mb-3">
+        <label for="phonenumber" class="form-label">Phone No</label>
+        <input type="tel" class="form-control" id="phonenumber" name="phone" ngModel required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" name="email" ngModel aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" name="address" ngModel required>
+      </div>
+      <div class="mb-3">
+        <label for="qualification" class="form-label">Qualification</label>
+        <select id="qualification" class="form-select" name="qualification" ngModel required>
+          <option value="" disabled selected>Select your qualification</option>
+          <option>10th pass</option>
+          <option>12th pass</option>
+          <option>B.E</option>
+          <option>B.Tech</option>
+          <option>B.A</option>
+          <option>B.Sc</option>
+          <option>B.CA</option>
+          <option>M.E</option>
+          <option>M.Tech</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="file" class="form-label">Upload Resume</label>
+        <input type="file" class="form-control" id="file" (change)="onFileChange($event)" required>
+      </div>
+      <button type="submit" class="btn btn-success" style="width: 100%; height: 50px; font-size: larger;">Submit</button>
+    </form>
+  
+    <!-- Success message -->
+    <div *ngIf="successMessage" class="alert alert-success mt-3">
+      Data submitted successfully!
+    </div>
+  
+    <h4>Submitted Data</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone No</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Qualification</th>
+          <th>Resume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of submittedData">
+          <td>{{ item.name }}</td>
+          <td>{{ item.phone }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.address }}</td>
+          <td>{{ item.qualification }}</td>
+          <td>{{ item.resume }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
